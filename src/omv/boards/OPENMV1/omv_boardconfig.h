@@ -22,8 +22,10 @@
 #define OMV_MAX_BLOB_FRAME_STR  "QCIF"
 
 // Bootloader LED GPIO port/pin
-#define OMV_BOOTLDR_LED_PIN     (GPIO_PIN_2)
-#define OMV_BOOTLDR_LED_PORT    (GPIOC)
+#define OMV_BOOTLDR_LED_PIN     GPIO_PIN_11//(GPIO_PIN_2)
+#define OMV_BOOTLDR_LED_PORT    GPIOD//(GPIOC)
+#define OMV_BOOTLDR_LED_PIN     GPIO_PIN_8//(GPIO_PIN_2)
+#define OMV_BOOTLDR_LED_PORT    GPIOA//(GPIOC)
 
 /* SCCB/I2C */
 #define SCCB_I2C                (I2C1)

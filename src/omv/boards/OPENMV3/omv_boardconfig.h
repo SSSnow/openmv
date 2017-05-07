@@ -31,8 +31,8 @@
 #define OMV_ENABLE_BARCODES
 
 // Bootloader LED GPIO port/pin
-#define OMV_BOOTLDR_LED_PIN     (GPIO_PIN_1)
-#define OMV_BOOTLDR_LED_PORT    (GPIOC)
+#define OMV_BOOTLDR_LED_PIN     (GPIO_PIN_8)//(GPIO_PIN_1)
+#define OMV_BOOTLDR_LED_PORT    (GPIOA)//(GPIOC)
 
 // RAW buffer size
 #define OMV_RAW_BUF_SIZE        (307200)
@@ -50,20 +50,20 @@
 #define SCCB_SDA_PIN            (GPIO_PIN_9)
 
 /* DCMI */
-#define DCMI_TIM                (TIM1)
-#define DCMI_TIM_PIN            (GPIO_PIN_8)
-#define DCMI_TIM_PORT           (GPIOA)
-#define DCMI_TIM_AF             (GPIO_AF1_TIM1)
-#define DCMI_TIM_CHANNEL        (TIM_CHANNEL_1)
-#define DCMI_TIM_CLK_ENABLE()   __TIM1_CLK_ENABLE()
-#define DCMI_TIM_CLK_DISABLE()  __TIM1_CLK_DISABLE()
-#define DCMI_TIM_PCLK_FREQ()    HAL_RCC_GetPCLK2Freq()
+//#define DCMI_TIM                (TIM1)
+//#define DCMI_TIM_PIN            (GPIO_PIN_8)
+//#define DCMI_TIM_PORT           (GPIOA)
+//#define DCMI_TIM_AF             (GPIO_AF1_TIM1)
+//#define DCMI_TIM_CHANNEL        (TIM_CHANNEL_1)
+//#define DCMI_TIM_CLK_ENABLE()   __TIM1_CLK_ENABLE()
+//#define DCMI_TIM_CLK_DISABLE()  __TIM1_CLK_DISABLE()
+//#define DCMI_TIM_PCLK_FREQ()    HAL_RCC_GetPCLK2Freq()
 
-#define DCMI_RESET_PIN          (GPIO_PIN_10)
-#define DCMI_RESET_PORT         (GPIOA)
+#define DCMI_RESET_PIN          (GPIO_PIN_13)//(GPIO_PIN_10)
+#define DCMI_RESET_PORT         (GPIOC)//(GPIOA)
 
-#define DCMI_PWDN_PIN           (GPIO_PIN_5)
-#define DCMI_PWDN_PORT          (GPIOB)
+#define DCMI_PWDN_PIN           (GPIO_PIN_14)//(GPIO_PIN_5)
+#define DCMI_PWDN_PORT          (GPIOC)//(GPIOB)
 
 #define DCMI_FREX_PIN           (GPIO_PIN_9)
 #define DCMI_FREX_PORT          (GPIOD)

@@ -48,7 +48,7 @@ UDEV_PATH    = "/etc/udev/rules.d/50-openmv.rules"
 
 DEFAULT_CONFIG='''\
 [main]
-board = OpenMV2
+board = OpenMV3
 serial_port = /dev/openmvcam
 recent =
 last_fw_path =
@@ -56,7 +56,7 @@ baudrate = 921600
 enable_jpeg = True
 '''
 CONFIG_KEYS = ['board', 'serial_port', 'recent', 'last_fw_path', 'baudrate', 'enable_jpeg']
-OPENMV_BOARDS = ['OpenMV1', 'OpenMV2']
+OPENMV_BOARDS = ['OpenMV1', 'OpenMV2','OpenMV3']
 
 class Bootloader:
     def __init__(self, builder, config):
